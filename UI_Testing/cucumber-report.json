@@ -1,0 +1,124 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "demo-testing-information;demo-steps-creating",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Demo steps creating",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "checking demo",
+            "match": {
+              "location": "tests\\steps\\demo.js:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4595299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "print some message",
+            "match": {
+              "location": "tests\\steps\\demo.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 569999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "result values",
+            "match": {
+              "location": "tests\\steps\\demo.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 302200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "demo-testing-information",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Demo testing information",
+    "tags": [],
+    "uri": "tests\\features\\demo.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "successful-login-with-valid-credentials;successful-login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Successful login with valid credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Providing valid url",
+            "match": {
+              "location": "tests\\steps\\loginSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4823227300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Providing valid username and password",
+            "match": {
+              "location": "tests\\steps\\loginSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 603073700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Clicking login button",
+            "match": {
+              "location": "tests\\steps\\loginSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3426700700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "successful-login-with-valid-credentials",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Successful login with valid credentials",
+    "tags": [],
+    "uri": "tests\\features\\login.feature"
+  }
+]
