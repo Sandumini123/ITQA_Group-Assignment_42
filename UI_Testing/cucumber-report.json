@@ -4,121 +4,70 @@
     "elements": [
       {
         "description": "",
-        "id": "demo-testing-information;demo-steps-creating",
+        "id": "open-sign-up-modal;verify-that-the-\"sign-up\"-modal-opens-successfully",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "Demo steps creating",
+        "line": 5,
+        "name": "Verify that the \"Sign up\" modal opens successfully",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
-            "name": "checking demo",
+            "line": 6,
+            "name": "Navigating to the homepage",
             "match": {
-              "location": "tests\\steps\\demo.js:3"
+              "location": "tests\\steps\\signupSteps.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 4595299
+              "duration": 4685985300
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 5,
-            "name": "print some message",
+            "line": 7,
+            "name": "Clicking the \"Sign up\" link in the navigation bar",
             "match": {
-              "location": "tests\\steps\\demo.js:7"
+              "location": "tests\\steps\\signupSteps.js:19"
             },
             "result": {
               "status": "passed",
-              "duration": 569999
+              "duration": 379331799
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
-            "name": "result values",
+            "line": 8,
+            "name": "The \"Sign up\" modal should appear on the screen",
             "match": {
-              "location": "tests\\steps\\demo.js:11"
+              "location": "tests\\steps\\signupSteps.js:23"
             },
             "result": {
               "status": "passed",
-              "duration": 302200
+              "duration": 12713400
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@signup",
+            "line": 1
+          }
+        ],
         "type": "scenario"
       }
     ],
-    "id": "demo-testing-information",
-    "line": 1,
+    "id": "open-sign-up-modal",
+    "line": 3,
     "keyword": "Feature",
-    "name": "Demo testing information",
-    "tags": [],
-    "uri": "tests\\features\\demo.feature"
-  },
-  {
-    "description": "",
-    "elements": [
+    "name": "Open Sign-Up Modal",
+    "tags": [
       {
-        "description": "",
-        "id": "successful-login-with-valid-credentials;successful-login-with-valid-credentials",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "Successful login with valid credentials",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "Providing valid url",
-            "match": {
-              "location": "tests\\steps\\loginSteps.js:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4823227300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "Providing valid username and password",
-            "match": {
-              "location": "tests\\steps\\loginSteps.js:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 603073700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "Clicking login button",
-            "match": {
-              "location": "tests\\steps\\loginSteps.js:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3426700700
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
+        "name": "@signup",
+        "line": 1
       }
     ],
-    "id": "successful-login-with-valid-credentials",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Successful login with valid credentials",
-    "tags": [],
-    "uri": "tests\\features\\login.feature"
+    "uri": "tests\\features\\signup.feature"
   }
 ]
