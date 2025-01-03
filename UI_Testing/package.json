@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "test": "cucumber-js features/**/*.feature --require steps/**/*.js"
-},
+  "scripts": {
+    "test": "cucumber-js features/**/*.feature --require steps/**/*.js",
+    "test:contact_empty": "cucumber-js --tags '@contact_empty'",
+    "test:login": "cucumber-js --tags '@login'",
+    "test:about": "cucumber-js --tags '@about'",
+    "test:signUp": "cucumber-js --tags '@signUp'"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -14,6 +18,8 @@
     "@types/node": "^22.10.2"
   },
   "dependencies": {
-    "@cucumber/cucumber": "^11.1.1"
+    "@cucumber/cucumber": "^11.1.1",
+    "chai": "^5.1.2",
+    "playwright": "^1.49.1"
   }
 }
