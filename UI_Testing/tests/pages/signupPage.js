@@ -1,30 +1,41 @@
 const signupLocators = require('../locators/signupLocators');
 
-class SignupPage {
+class SignUpPage {
     constructor(page) {
-        if (!page) {
-            throw new Error('Page instance is required');
+      this.page = page;
+      this.locators = require('../locators/signupLocators');
+    }
+  
+    async openHomePage() {
+      await this.page.goto('https://demoblaze.com/');
+    }
+  
+    async clickSignUpButton() {
+      await this.page.waitForSelector(this.locators.signUpButton, { state: 'visible' });
+      await this.page.click(this.locators.signUpButton);
+    }
+  
+    async fillUsername(username) {
+      await this.page.fill(this.locators.usernameField, username);
+    }
+  
+    async fillPassword(password) {
+      await this.page.fill(this.locators.passwordField, password);
+    }
+  
+    async submitSignUpForm() {
+      await this.page.click(this.locators.signUpSubmitButton);
+    }
+  
+    async verifyAlertMessage(expectedMessage) {
+      this.page.on('dialog', async (dialog) => {
+        const message = dialog.message();
+        if (message !== expectedMessage) {
+          throw new Error(`Expected alert message "${expectedMessage}", got "${message}"`);
         }
-        this.page = page;
+        await dialog.accept();
+      });
     }
-
-    async navigateToUrl(url) {
-        await this.page.goto(url, { timeout: 10000 });
-    }
-
-    async openSignupModal() {
-        await this.page.click(signupLocators.signupButton);
-        console.log('Clicked on the "Sign up" link');
-
-        // Wait for the modal to appear
-        await this.page.waitForSelector(signupLocators.signupModal, { state: 'visible', timeout: 5000 });
-    }
-
-    async isSignupModalVisible() {
-        const isModalVisible = await this.page.isVisible(signupLocators.signupModal);
-        console.log(`Modal visibility state: ${isModalVisible}`);
-        return isModalVisible;
-    }
-}
-
-module.exports = SignupPage;
+  }
+  
+  module.exports = SignUpPage;

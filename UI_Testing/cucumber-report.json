@@ -4,67 +4,119 @@
     "elements": [
       {
         "description": "",
-        "id": "open-sign-up-modal;verify-that-the-\"sign-up\"-modal-opens-successfully",
+        "id": "sign-up-functionality;sign-up-user",
         "keyword": "Scenario",
-        "line": 5,
-        "name": "Verify that the \"Sign up\" modal opens successfully",
+        "line": 7,
+        "name": "Sign Up user",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
-            "name": "Navigating to the homepage",
+            "line": 5,
+            "name": "I am navigate to home page",
             "match": {
-              "location": "tests\\steps\\signupSteps.js:6"
+              "location": "tests\\steps\\signupSteps.js:9"
             },
             "result": {
               "status": "passed",
-              "duration": 4685985300
+              "duration": 4804219499
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
-            "name": "Clicking the \"Sign up\" link in the navigation bar",
+            "line": 8,
+            "name": "I click the \"Sign Up\" tab",
             "match": {
-              "location": "tests\\steps\\signupSteps.js:19"
+              "location": "tests\\steps\\signupSteps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 379331799
+              "duration": 101699900
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "The \"Sign up\" modal should appear on the screen",
+            "line": 9,
+            "name": "It should display the Sign Up form",
             "match": {
-              "location": "tests\\steps\\signupSteps.js:23"
+              "location": "tests\\steps\\signupSteps.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 12713400
+              "duration": 253885200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I enter the username field with \"djuweiwiureh\"",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32502999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I enter the password field with \"54876fhihfi\"",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27964800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I click the \"Sign Up\" button",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 302756499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "It should display an alert message \"Sign up successful\"",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3659900
             }
           }
         ],
         "tags": [
           {
-            "name": "@signup",
+            "name": "@signUp",
             "line": 1
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "open-sign-up-modal",
-    "line": 3,
+    "id": "sign-up-functionality",
+    "line": 2,
     "keyword": "Feature",
-    "name": "Open Sign-Up Modal",
+    "name": "Sign Up functionality",
     "tags": [
       {
-        "name": "@signup",
+        "name": "@signUp",
         "line": 1
       }
     ],

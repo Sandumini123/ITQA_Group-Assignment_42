@@ -1,8 +1,13 @@
-@signup
+@signUp
+Feature: Sign Up functionality
 
-Feature: Open Sign-Up Modal
+  Background:
+    Given I am navigate to home page
 
-  Scenario: Verify that the "Sign up" modal opens successfully
-    Given Navigating to the homepage
-    When Clicking the "Sign up" link in the navigation bar
-    Then The "Sign up" modal should appear on the screen
+  Scenario: Sign Up user
+    When I click the "Sign Up" tab
+    Then It should display the Sign Up form
+    Then I enter the username field with "djuweiwiureh"
+    Then I enter the password field with "54876fhihfi"
+    Then I click the "Sign Up" button
+    Then It should display an alert message "Sign up successful"

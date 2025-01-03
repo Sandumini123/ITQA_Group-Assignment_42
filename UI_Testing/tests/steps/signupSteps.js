@@ -1,32 +1,57 @@
-const { Given, When, Then } = require('@cucumber/cucumber');
-const SignupPage = require('../pages/signupPage');
+const { Given, When, Then, setDefaultTimeout } = require('@cucumber/cucumber');
+const { chromium } = require('@playwright/test');
+const locators = require('../locators/signupLocators');
 
-let signupPage;
+setDefaultTimeout(20000);
 
-Given('Navigating to the homepage', async function () {
-    const { chromium } = require('playwright');
-    const browser = await chromium.launch({ headless: false });
-    const context = await browser.newContext();
-    const page = await context.newPage();
+let browser, page;
 
-    this.page = page; // Attach the page to the Cucumber context
-    signupPage = new SignupPage(page);
-
-    await signupPage.navigateToUrl('https://demoblaze.com/');
-    console.log('Homepage launched successfully');
+Given('I am navigate to home page', async function () {
+  browser = await chromium.launch({ headless: false }); // Set headless: true in production
+  const context = await browser.newContext();
+  page = await context.newPage();
+  await page.goto('https://demoblaze.com/');
 });
 
-When('Clicking the "Sign up" link in the navigation bar', async function () {
-    await signupPage.openSignupModal();
+When('I click the "Sign Up" tab', async function () {
+  await page.waitForSelector(locators.signUpButton, { state: 'visible', timeout: 20000 });
+  await page.click(locators.signUpButton);
 });
 
-Then('The "Sign up" modal should appear on the screen', async function () {
-    const isSignupModalVisible = await signupPage.isSignupModalVisible();
-    if (!isSignupModalVisible) {
-        // Log the modal's HTML content for debugging
-        const modalContent = await this.page.innerHTML(signupLocators.signupModal);
-        console.log('Modal content:', modalContent);
-        throw new Error('Sign up modal did not appear');
+Then('It should display the Sign Up form', async function () {
+    // Wait for the modal content to appear and be visible
+    await page.waitForSelector(locators.signUpForm, { state: 'visible', timeout: 20000 });
+
+    const formVisible = await page.isVisible(locators.signUpForm);
+    if (!formVisible) {
+        throw new Error('The Sign Up form is not displayed.');
     }
-    console.log('Sign up modal appeared successfully!');
+
+    console.log('Sign Up form displayed successfully.');
+});
+
+
+Then('I enter the username field with {string}', async function (username) {
+  await page.fill(locators.usernameField, username);
+  console.log(`Entered username: ${username}`);
+});
+
+Then('I enter the password field with {string}', async function (password) {
+  await page.fill(locators.passwordField, password);
+  console.log(`Entered password: ${password}`);
+});
+
+Then('I click the "Sign Up" button', async function () {
+  await page.click(locators.signUpSubmitButton);
+});
+
+Then('It should display an alert message {string}', async function (expectedAlertMessage) {
+  page.on('dialog', async (dialog) => {
+    const message = dialog.message();
+    if (message !== expectedAlertMessage) {
+      throw new Error(`Expected alert message "${expectedAlertMessage}", got "${message}"`);
+    }
+    console.log(`Alert message displayed: ${message}`);
+    await dialog.accept();
+  });
 });

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js features/*/.feature --require steps/*/.js",
-    "test:signup": "cucumber-js --tags '@signup'",
+    "test:signup": "cucumber-js --tags '@signUp'",
     "test:login": "cucumber-js --tags '@login'"
   },
   "keywords": [],
