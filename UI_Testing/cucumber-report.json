@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3548014400
+              "duration": 10317220699
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 363633499
+              "duration": 125103899
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13796899
+              "duration": 5750699
             }
           }
         ],
@@ -74,7 +74,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3760446299
+              "duration": 2698774499
             }
           },
           {
@@ -87,7 +87,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1866552200
+              "duration": 2266684100
             }
           },
           {
@@ -100,8 +100,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 14826999,
-              "error_message": "Error: expect: Property 'to' not found.\n    at ExpectMetaInfoProxyHandler.get (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\node_modules\\playwright\\lib\\matchers\\expect.js:214:38)\n    at Object.<anonymous> (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\cartSteps.js:45:21)"
+              "duration": 2219799,
+              "error_message": "Error: expect: Property 'to' not found.\n    at ExpectMetaInfoProxyHandler.get (G:\\ITQA_GNo42\\ITQA_Group-Assignment_42\\UI_Testing\\node_modules\\playwright\\lib\\matchers\\expect.js:214:38)\n    at Object.<anonymous> (G:\\ITQA_GNo42\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\cartSteps.js:45:21)"
             }
           },
           {
@@ -156,7 +156,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3678173399
+              "duration": 1735341800
             }
           },
           {
@@ -169,7 +169,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1863425800
+              "duration": 2067454099
             }
           },
           {
@@ -182,8 +182,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2177099,
-              "error_message": "Error: expect: Property 'to' not found.\n    at ExpectMetaInfoProxyHandler.get (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\node_modules\\playwright\\lib\\matchers\\expect.js:214:38)\n    at Object.<anonymous> (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\cartSteps.js:45:21)"
+              "duration": 1047699,
+              "error_message": "Error: expect: Property 'to' not found.\n    at ExpectMetaInfoProxyHandler.get (G:\\ITQA_GNo42\\ITQA_Group-Assignment_42\\UI_Testing\\node_modules\\playwright\\lib\\matchers\\expect.js:214:38)\n    at Object.<anonymous> (G:\\ITQA_GNo42\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\cartSteps.js:45:21)"
             }
           },
           {
@@ -301,7 +301,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4646416399
+              "duration": 2861490399
             }
           },
           {
@@ -314,7 +314,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1751659899
+              "duration": 2814226300
             }
           },
           {
@@ -327,7 +327,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 359084999
+              "duration": 329267899
             }
           },
           {
@@ -340,7 +340,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3522456099
+              "duration": 3991407000
             }
           },
           {
@@ -353,7 +353,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 154149300
+              "duration": 64371300
             }
           },
           {
@@ -366,7 +366,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 629940099
+              "duration": 658828500
             }
           },
           {
@@ -379,7 +379,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 896668799
+              "duration": 878277800
             }
           },
           {
@@ -392,7 +392,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 434451900
+              "duration": 373365199
             }
           },
           {
@@ -405,7 +405,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 607224300
+              "duration": 589948899
             }
           }
         ],
@@ -438,7 +438,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4366277000
+              "duration": 3416929399
             }
           },
           {
@@ -451,7 +451,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 148366600
+              "duration": 74780300
             }
           },
           {
@@ -464,7 +464,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 417323000
+              "duration": 369414300
             }
           },
           {
@@ -477,7 +477,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 291525800
+              "duration": 156426799
             }
           },
           {
@@ -490,8 +490,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2587400,
-              "error_message": "page.textContent: selector: expected string, got undefined\n    at CheckoutPage.verifyErrorMessageForEmptyFields (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\pages\\checkoutPage.js:109:35)\n    at Object.<anonymous> (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\checkoutSteps.js:72:22)"
+              "duration": 1372400,
+              "error_message": "page.textContent: selector: expected string, got undefined\n    at CheckoutPage.verifyErrorMessageForEmptyFields (G:\\ITQA_GNo42\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\pages\\checkoutPage.js:109:35)\n    at Object.<anonymous> (G:\\ITQA_GNo42\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\checkoutSteps.js:72:22)"
             }
           }
         ],
@@ -520,7 +520,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4771164099
+              "duration": 3595920800
             }
           },
           {
@@ -533,7 +533,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 236607200
+              "duration": 122621899
             }
           },
           {
@@ -546,7 +546,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 516011999
+              "duration": 351931699
             }
           },
           {
@@ -559,7 +559,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 264257200
+              "duration": 286477499
             }
           },
           {
@@ -572,8 +572,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 790499,
-              "error_message": "ReferenceError: locators is not defined\n    at CheckoutPage.verifyErrorMessageForInvalidYear (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\pages\\checkoutPage.js:102:54)\n    at Object.<anonymous> (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\checkoutSteps.js:87:24)"
+              "duration": 400599,
+              "error_message": "ReferenceError: locators is not defined\n    at CheckoutPage.verifyErrorMessageForInvalidYear (G:\\ITQA_GNo42\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\pages\\checkoutPage.js:102:54)\n    at Object.<anonymous> (G:\\ITQA_GNo42\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\checkoutSteps.js:87:24)"
             }
           }
         ],
@@ -618,7 +618,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5525150099
+              "duration": 2293194400
             }
           },
           {
@@ -631,7 +631,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 735639499
+              "duration": 315984799
             }
           },
           {
@@ -644,7 +644,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10276599
+              "duration": 3820000
             }
           },
           {
@@ -657,7 +657,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 908480799
+              "duration": 3213143900
             }
           },
           {
@@ -670,8 +670,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1299200,
-              "error_message": "Error: Test failed: Expected alert message to be \"Please fill out all fields.\", but got \"Thanks for the message!!\".\n    at Object.<anonymous> (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\contactSteps.js:59:15)"
+              "duration": 262999,
+              "error_message": "Error: Test failed: Expected alert message to be \"Please fill out all fields.\", but got \"Thanks for the message!!\".\n    at Object.<anonymous> (G:\\ITQA_GNo42\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\contactSteps.js:59:15)"
             }
           }
         ],
@@ -700,7 +700,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8179346700
+              "duration": 3722489099
             }
           },
           {
@@ -713,7 +713,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 454784400
+              "duration": 305317400
             }
           },
           {
@@ -726,7 +726,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13212200
+              "duration": 8895500
             }
           },
           {
@@ -739,7 +739,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1131349699
+              "duration": 1073186399
             }
           },
           {
@@ -752,7 +752,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1078558700
+              "duration": 1035032399
             }
           },
           {
@@ -765,7 +765,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1039514999
+              "duration": 1086951799
             }
           },
           {
@@ -778,7 +778,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 870898000
+              "duration": 873017199
             }
           },
           {
@@ -791,7 +791,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1018168399
+              "duration": 1009490099
             }
           }
         ],
@@ -820,7 +820,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4278085699
+              "duration": 2734059900
             }
           },
           {
@@ -833,7 +833,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 587722099
+              "duration": 318475400
             }
           },
           {
@@ -846,7 +846,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1061176100
+              "duration": 1017032700
             }
           },
           {
@@ -859,7 +859,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1046050699
+              "duration": 1026187400
             }
           },
           {
@@ -872,7 +872,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1045879600
+              "duration": 1017907800
             }
           },
           {
@@ -885,7 +885,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1073432699
+              "duration": 1040370600
             }
           },
           {
@@ -898,7 +898,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 285642399
+              "duration": 247682200
             }
           },
           {
@@ -911,8 +911,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 53413099,
-              "error_message": "Error: Test failed: Expected input fields to be empty, but got values - Email: \"test@example.com\", Name: \"Test User\", Message: \"This is a test message.\".\n    at Object.<anonymous> (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\contactSteps.js:109:15)"
+              "duration": 13399699,
+              "error_message": "Error: Test failed: Expected input fields to be empty, but got values - Email: \"test@example.com\", Name: \"Test User\", Message: \"This is a test message.\".\n    at Object.<anonymous> (G:\\ITQA_GNo42\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\contactSteps.js:109:15)"
             }
           }
         ],
@@ -952,7 +952,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 776400
+              "duration": 1914200
             }
           },
           {
@@ -965,7 +965,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 951799
+              "duration": 950399
             }
           },
           {
@@ -978,7 +978,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1515400
+              "duration": 1200500
             }
           }
         ],
@@ -1013,7 +1013,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3722765199
+              "duration": 2151186700
             }
           },
           {
@@ -1026,7 +1026,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1712049400
+              "duration": 351074200
             }
           },
           {
@@ -1038,8 +1038,9 @@
               "location": "tests\\steps\\loginSteps.js:24"
             },
             "result": {
-              "status": "passed",
-              "duration": 6916914000
+              "status": "failed",
+              "duration": 20004086199,
+              "error_message": "Error: function timed out, ensure the promise resolves within 20000 milliseconds\n    at Timeout.<anonymous> (G:\\ITQA_GNo42\\ITQA_Group-Assignment_42\\UI_Testing\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
             }
           }
         ],
@@ -1083,8 +1084,9 @@
               "location": "tests\\steps\\logoutSteps.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 4051469900
+              "status": "failed",
+              "duration": 20003938299,
+              "error_message": "Error: function timed out, ensure the promise resolves within 20000 milliseconds\n    at Timeout.<anonymous> (G:\\ITQA_GNo42\\ITQA_Group-Assignment_42\\UI_Testing\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
             }
           },
           {
@@ -1096,8 +1098,8 @@
               "location": "tests\\steps\\logoutSteps.js:24"
             },
             "result": {
-              "status": "passed",
-              "duration": 1028166400
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1109,8 +1111,8 @@
               "location": "tests\\steps\\logoutSteps.js:28"
             },
             "result": {
-              "status": "passed",
-              "duration": 3180600599
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1122,9 +1124,8 @@
               "location": "tests\\steps\\logoutSteps.js:37"
             },
             "result": {
-              "status": "failed",
-              "duration": 165726699,
-              "error_message": "Error: Confirmation message with locator \"Are you sure you want to logout\" is not displayed.\n    at Object.<anonymous> (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\logoutSteps.js:41:11)"
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1176,8 +1177,9 @@
               "location": "tests\\steps\\signupSteps.js:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 3365676299
+              "status": "failed",
+              "duration": 20001897100,
+              "error_message": "Error: function timed out, ensure the promise resolves within 20000 milliseconds\n    at Timeout.<anonymous> (G:\\ITQA_GNo42\\ITQA_Group-Assignment_42\\UI_Testing\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
             }
           },
           {
@@ -1189,8 +1191,8 @@
               "location": "tests\\steps\\signupSteps.js:16"
             },
             "result": {
-              "status": "passed",
-              "duration": 466584199
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1202,8 +1204,8 @@
               "location": "tests\\steps\\signupSteps.js:21"
             },
             "result": {
-              "status": "passed",
-              "duration": 131389000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1215,8 +1217,8 @@
               "location": "tests\\steps\\signupSteps.js:34"
             },
             "result": {
-              "status": "passed",
-              "duration": 20796000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1228,8 +1230,8 @@
               "location": "tests\\steps\\signupSteps.js:39"
             },
             "result": {
-              "status": "passed",
-              "duration": 31301000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1241,8 +1243,8 @@
               "location": "tests\\steps\\signupSteps.js:44"
             },
             "result": {
-              "status": "passed",
-              "duration": 539180699
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1254,8 +1256,8 @@
               "location": "tests\\steps\\signupSteps.js:48"
             },
             "result": {
-              "status": "passed",
-              "duration": 2865200
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],

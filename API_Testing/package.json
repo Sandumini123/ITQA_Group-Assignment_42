@@ -2,7 +2,7 @@
   "name": "api-testing",
   "version": "1.0.0",
   "main": "index.js",
-  "type":"commonjs",
+  "type": "commonjs",
   "scripts": {
     "test": "cucumber-js test"
   },
@@ -13,6 +13,7 @@
   "devDependencies": {
     "@playwright/test": "^1.49.1",
     "@types/node": "^22.10.2",
+    "allure-commandline": "^2.32.0",
     "allure-cucumberjs": "^3.0.7"
   },
   "dependencies": {
