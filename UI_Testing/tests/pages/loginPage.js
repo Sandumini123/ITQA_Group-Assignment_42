@@ -50,3 +50,4 @@ async navigateToUrl(url) {
 }
 
 module.exports = new LoginPage();
+

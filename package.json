@@ -1,0 +1,12 @@
+{
+  "name": "itqa_group-assignment_42",
+  "version": "1.0.0",
+  "description": "ITQA_Group Assignment_Group Number-42",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
