@@ -7,6 +7,7 @@ let browser;
 let page;
 
 
+
 Given('I navigate to the home page', async function () {
     browser = await chromium.launch({
         headless: false, // Set to true in production for faster tests
@@ -60,6 +61,66 @@ Then('An error message should be displayed', async function () {
 
     console.log('Error message was displayed as expected:', alertMessage);
 });
+
+When('I fill in the "Contact Email" field with {string}', async function (email) {
+    await page.fill(locators.contactEmailField, email);
+    await page.waitForTimeout(1000);
+});
+
+When('I fill in the "Contact Name" field with {string}', async function (name) {
+    await page.fill(locators.contactNameField, name);
+    await page.waitForTimeout(1000);
+});
+
+When('I fill in the "Message" field with {string}', async function (message) {
+    await page.fill(locators.messageField, message);
+    await page.waitForTimeout(1000);
+});
+
+Then('A success message should be displayed', async function () {
+    const expectedSuccessMessage = 'Thanks for the message!!';
+    await page.waitForTimeout(1000);
+    if (alertMessage !== expectedSuccessMessage) {
+        throw new Error(`Test failed: Expected alert message "${expectedSuccessMessage}", but got "${alertMessage}".`);
+    }
+    console.log('Success message was displayed as expected:', alertMessage);
+});
+
+
+When('I click the "Close" button', async function () {
+    await page.waitForSelector(locators.closeButton, { state: 'visible', timeout: 20000 });
+    await page.click(locators.closeButton);
+    await page.waitForTimeout(1000); // Wait to ensure the modal is closed
+});
+
+When('I click the "Contact" button again', async function () {
+    await page.waitForSelector(locators.contactButton, { state: 'visible', timeout: 20000 });
+    await page.click(locators.contactButton);
+    await page.waitForSelector(locators.contactForm, { state: 'visible', timeout: 20000 });
+    console.log('Contact form reopened successfully.');
+});
+
+Then('The input fields should be empty', async function () {
+    const emailValue = await page.inputValue(locators.contactEmailField);
+    const nameValue = await page.inputValue(locators.contactNameField);
+    const messageValue = await page.inputValue(locators.messageField);
+
+    if (emailValue || nameValue || messageValue) {
+        throw new Error(
+            `Test failed: Expected input fields to be empty, but got values - Email: "${emailValue}", Name: "${nameValue}", Message: "${messageValue}".`
+        );
+    }
+    console.log('All input fields are empty as expected.');
+});
+
+
+
+// Hook to close the browser after the test
+// After(async function () {
+//     if (browser) {
+//         await browser.close();
+//     }
+// });
 
 
 
