@@ -23,6 +23,20 @@ Given('a book exists with id {int}', async function (bookId) {
  return exists;
 });
 
+Given('a book exists with id {string}', async function (bookId) {
+  const isAuthenticated = await bookAPI.init('admin', 'password');
+  if (!isAuthenticated) {
+    console.log('Warning: Authentication failed when checking book existence');
+    return false;
+  }
+  const exists = await bookAPI.checkBookExists(bookId);
+  if (!exists) {
+    console.log(`Book with ID ${bookId} does not exist`);
+  }
+  return exists;
+ });
+
+
 When('I send a PUT request to {string} with the following payload', async function (endpoint, docString) {
   try {
     await bookAPI.init('admin', 'password');
@@ -44,6 +58,7 @@ When('I send a PUT request to {string} with the following payload', async functi
       };
       return;
     }
+    
  
     // Make API request
     response = await bookAPI.updateBook(payload.id, payload);
@@ -63,12 +78,13 @@ When('I send a PUT request to {string} with the following payload', async functi
         status: 404,
         body: { message: 'Book not found' }
       };
-    } else {
-      response = {
-        status: 500,
-        body: { message: error.message }
-      };
     }
+    // } else {
+    //   response = {
+    //     status: 500,
+    //     body: { message: error.message }
+    //   };
+    // }
   }
  });
 

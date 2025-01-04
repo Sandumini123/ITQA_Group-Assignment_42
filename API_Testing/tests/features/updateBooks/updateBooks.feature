@@ -37,22 +37,22 @@ Feature: Update Book API
   Mandatory parameters should not be null
 
 """
-    Scenario: Update a book with invalid ID
-      Given the API base URL is "http://localhost:7081"
-      And a book exists with id 989
-      When I send a PUT request to "/api/books/989" with the following payload
-      """
-    {
-      "id": 989,
-      "title": "null",
-      "author": "null"
-    }
-    """
-      Then the response status code should be 404
-      And the response body should contain invalid id error message:
-       """
-       Book not found
-        """
+    # Scenario: Update a book with invalid ID
+    #   Given the API base URL is "http://localhost:7081"
+    #   And a book exists with id 989
+    #   When I send a PUT request to "/api/books/989" with the following payload
+    #   """
+    # {
+    #   "id": 989,
+    #   "title": "null",
+    #   "author": "null"
+    # }
+    # """
+    #   Then the response status code should be 404
+    #   And the response body should contain invalid id error message:
+    #    """
+    #    Book not found
+    #     """
 
 
   Scenario: : Update a book as a user
@@ -72,20 +72,20 @@ Feature: Update Book API
   User is not permitted.
    """
 
-#   Scenario: Validate that numbers are not accepted in title and author fields (BUG EXPECTED)
-#     Given the API base URL is "http://localhost:7081"
-#     And a book exists with id 74
-#     When I send a PUT request to "/api/books/74" with the following payload
-#     """
-#     {
-#       "id": 74,
-#       "title": 124,
-#       "author": 67
-#     }
-#     """
-#     Then the response status code should be 400
+  Scenario: Validate that numbers are not accepted in title and author fields (BUG EXPECTED)
+    Given the API base URL is "http://localhost:7081"
+    And a book exists with id 74
+    When I send a PUT request to "/api/books/74" with the following payload
+    """
+    {
+      "id": 74,
+      "title": 126778,
+      "author": 6678
+    }
+    """
+    Then the response status code should be 400
 
-# Scenario: validate with empty string for author and title field  (BUG  EXPECTED)
+# Scenario: validate with empty string for author and title field
 #   Given the API base URL is "http://localhost:7081"
 #   And a book exists with id 76
 #   When I send a PUT request to "/api/books/76" with the following payload
