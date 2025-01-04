@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "test": "cucumber-js features/**/*.feature --require steps/**/*.js"
-},
+  "scripts": {
+    "test": "cucumber-js features/login.feature --require steps/**/*.js",
+    "checkout": "cucumber-js --tags=@checkout"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
