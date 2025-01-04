@@ -10,7 +10,7 @@ let page;
 
 Given('I navigate to the home page', async function () {
     browser = await chromium.launch({
-        headless: false, // Set to true in production for faster tests
+        headless: true, // Set to true in production for faster tests
         devtools: false,
     });
     const context = await browser.newContext();

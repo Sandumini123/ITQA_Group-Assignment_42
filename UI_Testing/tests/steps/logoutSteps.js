@@ -11,7 +11,7 @@ let page;
 let logoutPage;
 
 Given('I am on the homepage', async function () {
-  browser = await chromium.launch({ headless: false });
+  browser = await chromium.launch({ headless: true });
   page = await browser.newPage();
   
   // Increase the timeout to 10 seconds (10000 milliseconds)
