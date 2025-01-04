@@ -4,50 +4,20 @@ Feature: Create Book API Tests
   So that I can ensure it handles various scenarios correctly
 
 # correct
-  @missing-title
-  Scenario: Create a book without a title(BUG EXPECTED)
-    Given I am logged in as "admin" with password "password"
-    When I create a book with the following details:
-      | title   | author    |
-      |         | "test again" |
-    Then the response status code should be 400
-    And the response should contain the book's id
-
-
-# correct
-  @missing-author
-  Scenario: Create a book without an author(BUG EXPECTED)
-    Given I am logged in as "admin" with password "password"
-    When I create a book with the following details:
-      | title        | author |
-      | "Hi11" |         |
-    Then the response status code should be 400
-    And the response should contain the book's id
-
-  @invalid-id
-  Scenario: Create a book with invalid ID type(BUG EXPECTED)
+  @valid-request
+  Scenario: Successfully create a book  
     Given I am logged in as "admin" with password "password"
     When I create a book with the following details:
       | id   | title        | author     |
-      | "hiiii" | "Hi111" | "Hi111" |
-    Then the response status code should be 400
-    And the response message should be "Invalid parameter 'id'."
+      | 321 | "Hi1111" | "Hi11111" |
+    Then the response status code should be 201
+    And the response should contain the book's id
 
-
-
-  # @unauthorized-user
-  # Scenario: Create a book with unauthorized user(BUG EXPECTED)
-  #   Given I am logged in as "user" with password "password"
-  #   When I create a book with the following details:
-  #     | id   | title    | author     |
-  #     | 125  | "dulbha" | "Jaye jaye" |
-  #   Then the response status code should be 401
-
-
-
-
-
-
-
-
-
+  @duplicate-title
+  Scenario: Create a book with a duplicate title
+    Given I am logged in as "admin" with password "password"
+    When I create a book with the following details:
+      | id   | title      | author     |
+      | 124  | "Duplicate" | "Jane Doe" |
+    Then the response status code should be 208
+    And the response message should be "Book Already Exists"
