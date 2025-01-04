@@ -1,0 +1,53 @@
+Feature: Create Book API Tests
+  As a user of the library system
+  I want to test the create book functionality
+  So that I can ensure it handles various scenarios correctly
+
+# correct
+  @missing-title
+  Scenario: Create a book without a title(BUG EXPECTED)
+    Given I am logged in as "admin" with password "password"
+    When I create a book with the following details:
+      | title   | author    |
+      |         | "test again" |
+    Then the response status code should be 400
+    And the response should contain the book's id
+
+
+# correct
+  @missing-author
+  Scenario: Create a book without an author(BUG EXPECTED)
+    Given I am logged in as "admin" with password "password"
+    When I create a book with the following details:
+      | title        | author |
+      | "Hi11" |         |
+    Then the response status code should be 400
+    And the response should contain the book's id
+
+  @invalid-id
+  Scenario: Create a book with invalid ID type(BUG EXPECTED)
+    Given I am logged in as "admin" with password "password"
+    When I create a book with the following details:
+      | id   | title        | author     |
+      | "hiiii" | "Hi111" | "Hi111" |
+    Then the response status code should be 400
+    And the response message should be "Invalid parameter 'id'."
+
+
+
+  # @unauthorized-user
+  # Scenario: Create a book with unauthorized user(BUG EXPECTED)
+  #   Given I am logged in as "user" with password "password"
+  #   When I create a book with the following details:
+  #     | id   | title    | author     |
+  #     | 125  | "dulbha" | "Jaye jaye" |
+  #   Then the response status code should be 401
+
+
+
+
+
+
+
+
+

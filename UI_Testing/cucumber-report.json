@@ -4,121 +4,143 @@
     "elements": [
       {
         "description": "",
-        "id": "demo-testing-information;demo-steps-creating",
+        "id": "cart-functionality;delete-a-product-in-the-cart",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "Demo steps creating",
+        "line": 16,
+        "name": "Delete a product in the cart",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
-            "name": "checking demo",
+            "line": 17,
+            "name": "I am on the home page",
             "match": {
-              "location": "tests\\steps\\demo.js:3"
+              "location": "tests\\steps\\cartSteps.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 4595299
+              "duration": 2186193699
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 5,
-            "name": "print some message",
+            "line": 18,
+            "name": "I select a product",
             "match": {
-              "location": "tests\\steps\\demo.js:7"
+              "location": "tests\\steps\\cartSteps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 569999
+              "duration": 1477701399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I am navigated to the product page",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1581599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I click the \"Add to cart\" button",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1437830599
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
-            "name": "result values",
+            "line": 21,
+            "name": "I should see a success message \"Product added\"",
             "match": {
-              "location": "tests\\steps\\demo.js:11"
+              "location": "tests\\steps\\cartSteps.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 302200
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "demo-testing-information",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Demo testing information",
-    "tags": [],
-    "uri": "tests\\features\\demo.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "successful-login-with-valid-credentials;successful-login-with-valid-credentials",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "Successful login with valid credentials",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "Providing valid url",
-            "match": {
-              "location": "tests\\steps\\loginSteps.js:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4823227300
+              "duration": 686247899
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 5,
-            "name": "Providing valid username and password",
+            "line": 22,
+            "name": "I click the \"Cart\" tab",
             "match": {
-              "location": "tests\\steps\\loginSteps.js:17"
+              "location": "tests\\steps\\cartSteps.js:57"
             },
             "result": {
               "status": "passed",
-              "duration": 603073700
+              "duration": 2503008499
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
-            "name": "Clicking login button",
+            "line": 23,
+            "name": "I should see the product in the cart",
             "match": {
-              "location": "tests\\steps\\loginSteps.js:24"
+              "location": "tests\\steps\\cartSteps.js:63"
             },
             "result": {
               "status": "passed",
-              "duration": 3426700700
+              "duration": 39474900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I delete the product from the cart",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73383400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I should see the cart is empty",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2030708300
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@delete_product",
+            "line": 15
+          }
+        ],
         "type": "scenario"
       }
     ],
-    "id": "successful-login-with-valid-credentials",
+    "id": "cart-functionality",
     "line": 1,
     "keyword": "Feature",
-    "name": "Successful login with valid credentials",
+    "name": "Cart functionality",
     "tags": [],
-    "uri": "tests\\features\\login.feature"
+    "uri": "tests\\features\\cart.feature"
   }
 ]
