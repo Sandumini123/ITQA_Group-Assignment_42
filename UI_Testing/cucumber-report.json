@@ -4,6 +4,1164 @@
     "elements": [
       {
         "description": "",
+        "id": "cart-functionality;display-all-phones",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Display all phones",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the home page",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3548014400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I select the \"Phones\" category",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 363633499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see all phones displayed",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13796899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cart-functionality;add-product-to-cart",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Add product to cart",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am on the home page",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3760446299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I select a product",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1866552200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I am navigated to the product page",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:42"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 14826999,
+              "error_message": "Error: expect: Property 'to' not found.\n    at ExpectMetaInfoProxyHandler.get (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\node_modules\\playwright\\lib\\matchers\\expect.js:214:38)\n    at Object.<anonymous> (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\cartSteps.js:45:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I click the \"Add to cart\" button",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:48"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see a success message \"Product added\"",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:52"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart2",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cart-functionality;delete-a-product-in-the-cart",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Delete a product in the cart",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I am on the home page",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3678173399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I select a product",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1863425800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I am navigated to the product page",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:42"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2177099,
+              "error_message": "Error: expect: Property 'to' not found.\n    at ExpectMetaInfoProxyHandler.get (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\node_modules\\playwright\\lib\\matchers\\expect.js:214:38)\n    at Object.<anonymous> (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\cartSteps.js:45:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I click the \"Add to cart\" button",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:48"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see a success message \"Product added\"",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:52"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I click the \"Cart\" tab",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:57"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see the product in the cart",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:63"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I delete the product from the cart",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:69"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I should see the cart is empty",
+            "match": {
+              "location": "tests\\steps\\cartSteps.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@delete_product",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "cart-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Cart functionality",
+    "tags": [],
+    "uri": "tests\\features\\cart.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "checkout-page-validation;complete-a-purchase-with-valid-data",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Complete a purchase with valid data",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the index page main page",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4646416399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I click on a product",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1751659899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I proceed to the product page",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 359084999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I navigate to the cart page",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3522456099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 154149300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I fill the form with valid data",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 629940099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I should see a confirmation message",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 896668799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I click ok",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 434451900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should proceed to index page",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 607224300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkout",
+            "line": 2
+          },
+          {
+            "name": "@checkout",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "checkout-page-validation;submit-empty-checkout-form",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Submit empty checkout form",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I am on the Cart page with items",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4366277000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I attempt to place an order by clicking place order button",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 148366600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I enter null values to the given form",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 417323000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I click purchese button",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 291525800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "it should give a empty error message",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:71"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2587400,
+              "error_message": "page.textContent: selector: expected string, got undefined\n    at CheckoutPage.verifyErrorMessageForEmptyFields (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\pages\\checkoutPage.js:109:35)\n    at Object.<anonymous> (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\checkoutSteps.js:72:22)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkout",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "checkout-page-validation;checking-whether-the-year-of-the-credit-card-is-valid",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "checking whether the year of the credit card is valid",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "I am on the Cart page with items",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4771164099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I attempt to place an order by clicking place order button",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 236607200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I enter a future year to the year column",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 516011999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I click the purchese button",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 264257200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "it should give an error message",
+            "match": {
+              "location": "tests\\steps\\checkoutSteps.js:86"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 790499,
+              "error_message": "ReferenceError: locators is not defined\n    at CheckoutPage.verifyErrorMessageForInvalidYear (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\pages\\checkoutPage.js:102:54)\n    at Object.<anonymous> (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\checkoutSteps.js:87:24)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkout",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "checkout-page-validation",
+    "line": 3,
+    "keyword": "Feature",
+    "name": "Checkout Page Validation",
+    "tags": [
+      {
+        "name": "@checkout",
+        "line": 2
+      }
+    ],
+    "uri": "tests\\features\\checkout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "contact-form;contact-form-submit-with-empty-field",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Contact form submit with empty field",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to the home page",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5525150099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click the \"Contact\" button",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 735639499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "The contact form should be displayed",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10276599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I click the \"Send Message\" button",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 908480799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "An error message should be displayed",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:53"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1299200,
+              "error_message": "Error: Test failed: Expected alert message to be \"Please fill out all fields.\", but got \"Thanks for the message!!\".\n    at Object.<anonymous> (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\contactSteps.js:59:15)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contact_empty",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "contact-form;contact-form-submit-with-valid-input-data",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Contact form submit with valid input data",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I navigate to the home page",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8179346700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I click the \"Contact\" button",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 454784400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "The contact form should be displayed",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13212200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I fill in the \"Contact Email\" field with \"test@example.com\"",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1131349699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I fill in the \"Contact Name\" field with \"Test User\"",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1078558700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I fill in the \"Message\" field with \"This is a test message.\"",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1039514999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I click the \"Send Message\" button",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 870898000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "A success message should be displayed",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1018168399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contact_with_data",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "contact-form;closing-the-contact-form-should-clear-the-input-fields",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Closing the contact form should clear the input fields",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I navigate to the home page",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4278085699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I click the \"Contact\" button",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 587722099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I fill in the \"Contact Email\" field with \"test@example.com\"",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1061176100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I fill in the \"Contact Name\" field with \"Test User\"",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1046050699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I fill in the \"Message\" field with \"This is a test message.\"",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1045879600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "I click the \"Close\" button",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1073432699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I click the \"Contact\" button again",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:96"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 285642399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "The input fields should be empty",
+            "match": {
+              "location": "tests\\steps\\contactSteps.js:103"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 53413099,
+              "error_message": "Error: Test failed: Expected input fields to be empty, but got values - Email: \"test@example.com\", Name: \"Test User\", Message: \"This is a test message.\".\n    at Object.<anonymous> (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\contactSteps.js:109:15)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contact_clear_fields",
+            "line": 23
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "contact-form",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "contact form",
+    "tags": [],
+    "uri": "tests\\features\\contact.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "demo-testing-information;demo-steps-creating",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Demo steps creating",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "checking demo",
+            "match": {
+              "location": "tests\\steps\\demo.js:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 776400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "print some message",
+            "match": {
+              "location": "tests\\steps\\demo.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 951799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "result values",
+            "match": {
+              "location": "tests\\steps\\demo.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1515400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "demo-testing-information",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Demo testing information",
+    "tags": [],
+    "uri": "tests\\features\\demo.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "successful-login-with-valid-credentials;successful-login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Successful login with valid credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Providing valid url",
+            "match": {
+              "location": "tests\\steps\\loginSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3722765199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Providing valid username and password",
+            "match": {
+              "location": "tests\\steps\\loginSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1712049400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Clicking login button",
+            "match": {
+              "location": "tests\\steps\\loginSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6916914000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "successful-login-with-valid-credentials",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Successful login with valid credentials",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 1
+      }
+    ],
+    "uri": "tests\\features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "logout-functionality;user-logs-in-and-logs-out-successfully",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "User logs in and logs out successfully",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the homepage",
+            "match": {
+              "location": "tests\\steps\\logoutSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4051469900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I login with username \"panvol\" and password \"test@123\"",
+            "match": {
+              "location": "tests\\steps\\logoutSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1028166400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click on the logout button",
+            "match": {
+              "location": "tests\\steps\\logoutSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3180600599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I confirm the logout",
+            "match": {
+              "location": "tests\\steps\\logoutSteps.js:37"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 165726699,
+              "error_message": "Error: Confirmation message with locator \"Are you sure you want to logout\" is not displayed.\n    at Object.<anonymous> (D:\\A.UoM\\4th year\\ITQA\\Assignment\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\logoutSteps.js:41:11)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should be logged out successfully",
+            "match": {
+              "location": "tests\\steps\\logoutSteps.js:51"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@logout",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "logout-functionality",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Logout functionality",
+    "tags": [],
+    "uri": "tests\\features\\logout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "sign-up-functionality;sign-up-user",
         "keyword": "Scenario",
         "line": 7,
@@ -19,7 +1177,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3446190700
+              "duration": 3365676299
             }
           },
           {
@@ -32,7 +1190,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 369820700
+              "duration": 466584199
             }
           },
           {
@@ -45,7 +1203,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 302540499
+              "duration": 131389000
             }
           },
           {
@@ -58,7 +1216,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 121947799
+              "duration": 20796000
             }
           },
           {
@@ -71,7 +1229,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 101876199
+              "duration": 31301000
             }
           },
           {
@@ -84,7 +1242,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 169072199
+              "duration": 539180699
             }
           },
           {
@@ -97,7 +1255,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5719200
+              "duration": 2865200
             }
           }
         ],

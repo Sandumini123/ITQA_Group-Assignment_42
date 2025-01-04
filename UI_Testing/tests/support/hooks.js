@@ -9,8 +9,14 @@ let context;
 
 Before(async function () {
   // Launch Playwright browser before each scenario
-  browser = await chromium.launch({ headless: true }); // You can set headless: true for no UI
-  context = await browser.newContext();
+  browser = await chromium.launch({
+    headless: true,
+    args: ["--start-maximized"],
+ });
+ context = await browser.newContext({
+  viewport: { width: 1920, height: 1080 },
+  javaScriptEnabled: true,
+});
   page = await browser.newPage();
   this.page = page; // Attach the page to the context
 });
