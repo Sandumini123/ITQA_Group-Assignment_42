@@ -9,7 +9,7 @@ let context;
 
 Before(async function () {
   // Launch Playwright browser before each scenario
-  browser = await chromium.launch({ headless: false }); // You can set headless: true for no UI
+  browser = await chromium.launch({ headless: true }); // You can set headless: true for no UI
   context = await browser.newContext();
   page = await browser.newPage();
   this.page = page; // Attach the page to the context
