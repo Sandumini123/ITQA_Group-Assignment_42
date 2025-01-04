@@ -1,11 +1,11 @@
 {
   "name": "ui_testing",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-"scripts": {
-  "test": "cucumber-js features/**/*.feature --require steps/**/*.js"
-},
+  "scripts": {
+    "test": "cucumber-js features/**/*.feature --require steps/**/*.js",
+    "test:about": "cucumber-js --tags 'about'"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -15,5 +15,9 @@
   },
   "dependencies": {
     "@cucumber/cucumber": "^11.1.1"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "description": ""
 }

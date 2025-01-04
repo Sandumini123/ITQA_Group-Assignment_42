@@ -4,6 +4,103 @@
     "elements": [
       {
         "description": "",
+        "id": "verify-about-us-video;verify-the-about-us-video-plays",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify the About Us video plays",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to the homepage",
+            "match": {
+              "location": "tests/steps/aboutSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4717954915
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click the About Us tab",
+            "match": {
+              "location": "tests/steps/aboutSteps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 257713208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "The video should be displayed",
+            "match": {
+              "location": "tests/steps/aboutSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1005885874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I click the close button",
+            "match": {
+              "location": "tests/steps/aboutSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 346422000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "The video should not be visible",
+            "match": {
+              "location": "tests/steps/aboutSteps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6753541
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@about",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "verify-about-us-video",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Verify About Us video",
+    "tags": [
+      {
+        "name": "@about",
+        "line": 1
+      }
+    ],
+    "uri": "tests/features/about.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "demo-testing-information;demo-steps-creating",
         "keyword": "Scenario",
         "line": 3,
@@ -15,11 +112,11 @@
             "line": 4,
             "name": "checking demo",
             "match": {
-              "location": "tests\\steps\\demo.js:3"
+              "location": "tests/steps/demo.js:3"
             },
             "result": {
               "status": "passed",
-              "duration": 4595299
+              "duration": 258166
             }
           },
           {
@@ -28,11 +125,11 @@
             "line": 5,
             "name": "print some message",
             "match": {
-              "location": "tests\\steps\\demo.js:7"
+              "location": "tests/steps/demo.js:7"
             },
             "result": {
               "status": "passed",
-              "duration": 569999
+              "duration": 129667
             }
           },
           {
@@ -41,11 +138,11 @@
             "line": 6,
             "name": "result values",
             "match": {
-              "location": "tests\\steps\\demo.js:11"
+              "location": "tests/steps/demo.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 302200
+              "duration": 88041
             }
           }
         ],
@@ -58,7 +155,7 @@
     "keyword": "Feature",
     "name": "Demo testing information",
     "tags": [],
-    "uri": "tests\\features\\demo.feature"
+    "uri": "tests/features/demo.feature"
   },
   {
     "description": "",
@@ -76,11 +173,11 @@
             "line": 4,
             "name": "Providing valid url",
             "match": {
-              "location": "tests\\steps\\loginSteps.js:8"
+              "location": "tests/steps/loginSteps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 4823227300
+              "duration": 3041649290
             }
           },
           {
@@ -89,11 +186,11 @@
             "line": 5,
             "name": "Providing valid username and password",
             "match": {
-              "location": "tests\\steps\\loginSteps.js:17"
+              "location": "tests/steps/loginSteps.js:17"
             },
             "result": {
               "status": "passed",
-              "duration": 603073700
+              "duration": 285334375
             }
           },
           {
@@ -102,11 +199,11 @@
             "line": 6,
             "name": "Clicking login button",
             "match": {
-              "location": "tests\\steps\\loginSteps.js:24"
+              "location": "tests/steps/loginSteps.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 3426700700
+              "duration": 2788969583
             }
           }
         ],
@@ -119,6 +216,6 @@
     "keyword": "Feature",
     "name": "Successful login with valid credentials",
     "tags": [],
-    "uri": "tests\\features\\login.feature"
+    "uri": "tests/features/login.feature"
   }
 ]
