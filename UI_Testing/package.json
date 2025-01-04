@@ -6,7 +6,10 @@
   "scripts": {
     "test": "cucumber-js features/*/.feature --require steps/*/.js",
     "test:signup": "cucumber-js --tags '@signUp'",
-    "test:login": "cucumber-js --tags '@login'"
+    "test:login": "cucumber-js --tags '@login'",
+    "test:contact_empty": "cucumber-js --tags '@contact_empty'",
+    "test:about": "cucumber-js --tags '@about'",
+    "test:signUp": "cucumber-js --tags '@signUp'"
   },
   "keywords": [],
   "author": "",
