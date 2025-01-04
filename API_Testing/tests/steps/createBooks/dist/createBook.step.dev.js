@@ -9,7 +9,7 @@ var _require = require('@cucumber/cucumber'),
 var _require2 = require('@playwright/test'),
     expect = _require2.expect;
 
-var BookAPI = require('../../../src/pages/createBooks/BookAPI_For_Post'); // Increase timeout to 30 seconds
+var BookAPI = require('../../../../src/pages/createBooks/BookAPI_For_Post'); // Increase timeout to 30 seconds
 
 
 setDefaultTimeout(30 * 1000);
