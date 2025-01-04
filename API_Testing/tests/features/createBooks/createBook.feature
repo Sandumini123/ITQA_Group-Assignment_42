@@ -21,3 +21,12 @@ Feature: Create Book API Tests
       | 124  | "Duplicate" | "Jane Doe" |
     Then the response status code should be 208
     And the response message should be "Book Already Exists"
+
+  @invalid-id
+  Scenario: Create a book with invalid ID type(BUG EXPECTED)
+    Given I am logged in as "admin" with password "password"
+    When I create a book with the following details:
+      | id   | title        | author     |
+      | "hiiii" | "Hi111" | "Hi111" |
+    Then the response status code should be 400
+    And the response message should be "Invalid parameter 'id'."
