@@ -1,5 +1,5 @@
 const { Given, When, Then, setWorldConstructor } = require('@cucumber/cucumber');
-const { expect } = require('chai');
+const { expect } = require('@playwright/test');
 const { chromium } = require('playwright');
 const CartPage = require('../pages/cartPage');
 

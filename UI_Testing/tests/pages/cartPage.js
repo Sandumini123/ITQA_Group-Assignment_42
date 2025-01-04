@@ -1,4 +1,4 @@
-const { expect } = require('chai');
+const { expect } = require('@playwright/test');
 const locators = require('../locators/cartLocators');
 
 class CartPage {

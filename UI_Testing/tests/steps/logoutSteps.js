@@ -1,7 +1,7 @@
 // steps/logoutSteps.js
 
 const { Given, When, Then, After } = require('@cucumber/cucumber');
-const { expect } = require('chai');
+const { expect } = require('@playwright/test');
 const { chromium } = require('playwright');
 const locators = require('../locators/logoutLocators'); // Adjusted the path to locators
 const LogoutPage = require('../pages/logoutPage'); // Adjusted the path to pages

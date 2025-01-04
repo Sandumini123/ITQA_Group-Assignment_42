@@ -1,7 +1,7 @@
 {
   "default": {
     "formateOptions": {
-      "snippentInterface": "async-await"
+      "snippentInterface": "async-await","resultsDir": "allure-results"
     },
     
     "paths": ["tests/features/deleteBooks/deleteBook.feature","tests/features/createBooks/createBook.feature"],
@@ -12,7 +12,7 @@
       "tests/support/world.js",
       "tests/steps/createBooks/createBook.steps.js"
     ],
-    "format": ["html:cucumber-report.html"]
+    "format": ["html:cucumber-report.html","allure-cucumberjs/reporter"]
 
   }
 }

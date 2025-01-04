@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "cucumber-js features/*/.feature --require steps/*/.js",
     "test:signup": "cucumber-js --tags '@signUp'",
@@ -17,10 +18,12 @@
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.49.1",
-    "@types/node": "^22.10.2"
+    "@types/node": "^22.10.2",
+    "allure-cucumberjs": "^3.0.7",
+    "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@cucumber/cucumber": "^11.1.1"
+    "@cucumber/cucumber": "^11.1.1",
+    "chai": "^5.1.2"
   }
 }
-
