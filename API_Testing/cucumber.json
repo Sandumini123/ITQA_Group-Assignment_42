@@ -3,13 +3,16 @@
     "formateOptions": {
       "snippentInterface": "async-await"
     },
-    "paths": ["tests/features/createBooks/createBook.feature"],
+    
+    "paths": ["tests/features/deleteBooks/deleteBook.feature","tests/features/createBooks/createBook.feature"],
     "publishQuite": true,
     "dryRun": false,
     "require": [
-      "tests/steps/createBooks/createBook.steps.js",
-      "tests/support/world.js"
+      "tests/steps/deleteBooks/deleteBooks.steps.js",
+      "tests/support/world.js",
+      "tests/steps/createBooks/createBook.steps.js"
     ],
     "format": ["html:cucumber-report.html"]
+
   }
 }

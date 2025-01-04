@@ -4,143 +4,122 @@
     "elements": [
       {
         "description": "",
-        "id": "cart-functionality;delete-a-product-in-the-cart",
+        "id": "sign-up-functionality;sign-up-user",
         "keyword": "Scenario",
-        "line": 16,
-        "name": "Delete a product in the cart",
+        "line": 7,
+        "name": "Sign Up user",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 17,
-            "name": "I am on the home page",
+            "line": 5,
+            "name": "I am navigate to home page",
             "match": {
-              "location": "tests\\steps\\cartSteps.js:13"
+              "location": "tests\\steps\\signupSteps.js:9"
             },
             "result": {
               "status": "passed",
-              "duration": 2186193699
+              "duration": 4527777700
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 18,
-            "name": "I select a product",
+            "line": 8,
+            "name": "I click the \"Sign Up\" tab",
             "match": {
-              "location": "tests\\steps\\cartSteps.js:37"
+              "location": "tests\\steps\\signupSteps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 1477701399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "I am navigated to the product page",
-            "match": {
-              "location": "tests\\steps\\cartSteps.js:42"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1581599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "I click the \"Add to cart\" button",
-            "match": {
-              "location": "tests\\steps\\cartSteps.js:48"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1437830599
+              "duration": 187080599
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 21,
-            "name": "I should see a success message \"Product added\"",
+            "line": 9,
+            "name": "It should display the Sign Up form",
             "match": {
-              "location": "tests\\steps\\cartSteps.js:52"
+              "location": "tests\\steps\\signupSteps.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 686247899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 22,
-            "name": "I click the \"Cart\" tab",
-            "match": {
-              "location": "tests\\steps\\cartSteps.js:57"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2503008499
+              "duration": 184167199
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 23,
-            "name": "I should see the product in the cart",
+            "line": 10,
+            "name": "I enter the username field with \"djuweiwiureh\"",
             "match": {
-              "location": "tests\\steps\\cartSteps.js:63"
+              "location": "tests\\steps\\signupSteps.js:34"
             },
             "result": {
               "status": "passed",
-              "duration": 39474900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 24,
-            "name": "I delete the product from the cart",
-            "match": {
-              "location": "tests\\steps\\cartSteps.js:69"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 73383400
+              "duration": 58043300
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 25,
-            "name": "I should see the cart is empty",
+            "line": 11,
+            "name": "I enter the password field with \"54876fhihfi\"",
             "match": {
-              "location": "tests\\steps\\cartSteps.js:73"
+              "location": "tests\\steps\\signupSteps.js:39"
             },
             "result": {
               "status": "passed",
-              "duration": 2030708300
+              "duration": 51253100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I click the \"Sign Up\" button",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185283000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "It should display an alert message \"Sign up successful\"",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3040600
             }
           }
         ],
         "tags": [
           {
-            "name": "@delete_product",
-            "line": 15
+            "name": "@signUp",
+            "line": 1
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "cart-functionality",
-    "line": 1,
+    "id": "sign-up-functionality",
+    "line": 2,
     "keyword": "Feature",
-    "name": "Cart functionality",
-    "tags": [],
-    "uri": "tests\\features\\cart.feature"
+    "name": "Sign Up functionality",
+    "tags": [
+      {
+        "name": "@signUp",
+        "line": 1
+      }
+    ],
+    "uri": "tests\\features\\signup.feature"
   }
 ]
