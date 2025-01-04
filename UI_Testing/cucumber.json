@@ -1,10 +1,10 @@
 {
   "default": {
       "paths": [
-          "tests/features/*.feature"
+          "tests/features/"
       ],
       "require": [
-          "tests/steps/*.js", "tests/support/*.js"
+          "tests/steps/*.js"
       ],
       "formatOptions": {
           "snippetInterface": "async-await"
