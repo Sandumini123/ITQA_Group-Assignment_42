@@ -1,10 +1,16 @@
 {
   "name": "ui_testing",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js features/**/*.feature --require steps/**/*.js",
-    "test:about": "cucumber-js --tags 'about'"
+    "test": "cucumber-js features/*/.feature --require steps/*/.js",
+    "test:signup": "cucumber-js --tags '@signUp'",
+    "test:login": "cucumber-js --tags '@login'",
+    "test:contact_empty": "cucumber-js --tags '@contact_empty'",
+    "test:about": "cucumber-js --tags '@about'",
+    "test:signUp": "cucumber-js --tags '@signUp'",
+    "checkout": "cucumber-js --tags=@checkout"
   },
   "keywords": [],
   "author": "",
@@ -15,9 +21,6 @@
   },
   "dependencies": {
     "@cucumber/cucumber": "^11.1.1"
-  },
-  "directories": {
-    "test": "tests"
-  },
-  "description": ""
+  }
 }
+

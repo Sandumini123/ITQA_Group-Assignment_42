@@ -25,11 +25,17 @@ Given('I am not logged in', async function () {
     await bookAPI.init(null, null);
 });
 
-When('I delete the book with ID {string}', async function (bookId) {
-    response = await bookAPI.deleteBook(bookId);
+When('I delete the book with ID {int}', async function (bookId) {
+    response = await bookAPI.deleteBook(bookId.toString());
     console.log(`DeleteBook Response for ID ${bookId}:`, response);
 });
 
+When('I try to delete a book without authentication', async function () {
+    response = await bookAPI.deleteBookWithoutAuth('103');
+    console.log('Response for unauthenticated delete:', response);
+});
+
+//
 Then('the response status code should be {int}', async function (expectedStatus) {
     console.log('Actual Response Status:', response.status);
     expect(response.status).toBe(expectedStatus);
@@ -40,14 +46,5 @@ Then('the response message should be {string}', async function (expectedMessage)
     expect(response.body.message || response.body.error).toBe(expectedMessage);
 });
 
-// Additional test steps from the first code
-Given('Delete book API is running', async function () {
-    try {
-        bookAPI = new BookAPI();
-        console.log('Delete Book API initialized successfully');
-    } catch (error) {
-        console.error(`Error initializing Delete Book API: ${error.message}`);
-        throw error;
-    }
-});
+
 

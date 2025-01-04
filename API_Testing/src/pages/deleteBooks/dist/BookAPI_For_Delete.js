@@ -90,7 +90,4 @@ class BookAPI {
   }
 }
 
-
-///check
-
 module.exports = BookAPI;

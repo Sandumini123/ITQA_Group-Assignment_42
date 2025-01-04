@@ -17,6 +17,5 @@
     "@cucumber/cucumber": "^11.1.1",
     "api-testing": "file:",
     "chai": "^5.1.2"
-    
   }
 }

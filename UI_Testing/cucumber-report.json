@@ -4,219 +4,122 @@
     "elements": [
       {
         "description": "",
-        "id": "verify-about-us-video;verify-the-about-us-video-plays",
+        "id": "sign-up-functionality;sign-up-user",
         "keyword": "Scenario",
-        "line": 4,
-        "name": "Verify the About Us video plays",
+        "line": 7,
+        "name": "Sign Up user",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "I navigate to the homepage",
+            "name": "I am navigate to home page",
             "match": {
-              "location": "tests/steps/aboutSteps.js:9"
+              "location": "tests\\steps\\signupSteps.js:9"
             },
             "result": {
               "status": "passed",
-              "duration": 3198726749
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "I click the About Us tab",
-            "match": {
-              "location": "tests/steps/aboutSteps.js:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 272841999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "The video should be displayed",
-            "match": {
-              "location": "tests/steps/aboutSteps.js:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1003363416
+              "duration": 4527777700
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 8,
-            "name": "I click the close button",
+            "name": "I click the \"Sign Up\" tab",
             "match": {
-              "location": "tests/steps/aboutSteps.js:32"
+              "location": "tests\\steps\\signupSteps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 212596333
+              "duration": 187080599
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 9,
-            "name": "The video should not be visible",
+            "name": "It should display the Sign Up form",
             "match": {
-              "location": "tests/steps/aboutSteps.js:40"
+              "location": "tests\\steps\\signupSteps.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 3629750
+              "duration": 184167199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I enter the username field with \"djuweiwiureh\"",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58043300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I enter the password field with \"54876fhihfi\"",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51253100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I click the \"Sign Up\" button",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185283000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "It should display an alert message \"Sign up successful\"",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3040600
             }
           }
         ],
         "tags": [
           {
-            "name": "@about",
+            "name": "@signUp",
             "line": 1
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "verify-about-us-video",
+    "id": "sign-up-functionality",
     "line": 2,
     "keyword": "Feature",
-    "name": "Verify About Us video",
+    "name": "Sign Up functionality",
     "tags": [
       {
-        "name": "@about",
+        "name": "@signUp",
         "line": 1
       }
     ],
-    "uri": "tests/features/about.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "demo-testing-information;demo-steps-creating",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "Demo steps creating",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "checking demo",
-            "match": {
-              "location": "tests/steps/demo.js:3"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 377333
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "print some message",
-            "match": {
-              "location": "tests/steps/demo.js:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 106291
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "result values",
-            "match": {
-              "location": "tests/steps/demo.js:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 146416
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "demo-testing-information",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Demo testing information",
-    "tags": [],
-    "uri": "tests/features/demo.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "successful-login-with-valid-credentials;successful-login-with-valid-credentials",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "Successful login with valid credentials",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "Providing valid url",
-            "match": {
-              "location": "tests/steps/loginSteps.js:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4083982999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "Providing valid username and password",
-            "match": {
-              "location": "tests/steps/loginSteps.js:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 259019749
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "Clicking login button",
-            "match": {
-              "location": "tests/steps/loginSteps.js:24"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 1374748416,
-              "error_message": "page.waitForSelector: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('#nameofuser') to be visible\u001b[22m\n\u001b[2m    7 × locator resolved to hidden <a href=\"#\" id=\"nameofuser\" class=\"nav-link\"></a>\u001b[22m\n\n    at World.<anonymous> (/Users/jayanithyamadhushani/Documents/University/L4/ITQA/Final_Assignment_01/ITQA_Group-Assignment_42/UI_Testing/tests/steps/loginSteps.js:26:14)"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "successful-login-with-valid-credentials",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Successful login with valid credentials",
-    "tags": [],
-    "uri": "tests/features/login.feature"
+    "uri": "tests\\features\\signup.feature"
   }
 ]
