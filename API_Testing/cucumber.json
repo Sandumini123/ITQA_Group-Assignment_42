@@ -4,13 +4,16 @@
       "snippentInterface": "async-await","resultsDir": "allure-results"
     },
     
-    "paths": ["tests/features/deleteBooks/deleteBook.feature","tests/features/createBooks/createBook.feature"],
+    "paths": ["tests/features/deleteBooks/deleteBook.feature","tests/features/createBooks/createBook.feature",
+  "tests/features/**/*.feature"
+],
     "publishQuite": true,
     "dryRun": false,
     "require": [
       "tests/steps/deleteBooks/deleteBooks.steps.js",
       "tests/support/world.js",
-      "tests/steps/createBooks/createBook.steps.js"
+      "tests/steps/createBooks/createBook.steps.js",
+      "tests/steps/**/*.js"
     ],
     "format": ["html:cucumber-report.html","allure-cucumberjs/reporter"]
 
