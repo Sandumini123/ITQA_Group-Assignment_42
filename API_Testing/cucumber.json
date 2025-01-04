@@ -3,11 +3,11 @@
     "formateOptions": {
       "snippentInterface": "async-await"
     },
-    "paths": ["tests/features/getBooks/getBooks.feature"],
+    "paths": ["tests/features/deleteBooks/deleteBook.feature"],
     "publishQuite": true,
     "dryRun": false,
     "require": [
-      "tests/steps/getBooks/getAllBooks.steps.js",
+      "tests/steps/deleteBooks/deleteBooks.steps.js",
       "tests/support/world.js"
     ],
     "format": ["html:cucumber-report.html"]
