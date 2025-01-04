@@ -1,3 +1,4 @@
+@login
 Feature: Successful login with valid credentials
 
   Scenario: Successful login with valid credentials

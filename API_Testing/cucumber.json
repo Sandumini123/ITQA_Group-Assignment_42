@@ -11,5 +11,6 @@
       "tests/support/world.js"
     ],
     "format": ["html:cucumber-report.html"]
+
   }
 }
