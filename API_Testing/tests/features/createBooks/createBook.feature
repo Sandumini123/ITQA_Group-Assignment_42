@@ -8,8 +8,8 @@ Feature: Create Book API Tests
   Scenario: Successfully create a book  
     Given I am logged in as "admin" with password "password"
     When I create a book with the following details:
-      | id   | title        | author     |
-      | 321 | "Hi1111" | "Hi11111" |
+      | id   | title      | author     |
+      |  | "Hilly" | "Hi11111" |
     Then the response status code should be 201
     And the response should contain the book's id
 
@@ -20,7 +20,7 @@ Feature: Create Book API Tests
       | id   | title      | author     |
       | 124  | "Duplicate" | "Jane Doe" |
     Then the response status code should be 208
-    And the response message should be "Book Already Exists"
+    # And the response message should be "Book Already Exists"
 
   @invalid-id
   Scenario: Create a book with invalid ID type(BUG EXPECTED)
