@@ -16,8 +16,8 @@ class LoginPage {
     console.log('Browser launched');
   }
  // loginPage.js
-async navigateToUrl(url) {
-  await this.page.goto(url, { timeout: 10000 }); // Set timeout to 10 seconds for this action
+    async navigateToUrl(url) {
+    await this.page.goto(url, { timeout: 10000 }); // Set timeout to 10 seconds for this action
 }
 
 
