@@ -25,14 +25,6 @@ Feature: Create Book API Tests
     And the response should contain the book's id
 
 
-  # @unauthorized-user
-  # Scenario: Create a book with unauthorized user(BUG EXPECTED)
-  #   Given I am logged in as "user" with password "password"
-  #   When I create a book with the following details:
-  #     | id   | title    | author     |
-  #     | 125  | "dulbha" | "Jaye jaye" |
-  #   Then the response status code should be 401
-
 
 
 
