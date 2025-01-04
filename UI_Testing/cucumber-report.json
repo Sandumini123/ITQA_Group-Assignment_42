@@ -1,1 +1,125 @@
-[]
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "sign-up-functionality;sign-up-user",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Sign Up user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am navigate to home page",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4527777700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I click the \"Sign Up\" tab",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 187080599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "It should display the Sign Up form",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 184167199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I enter the username field with \"djuweiwiureh\"",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58043300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I enter the password field with \"54876fhihfi\"",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51253100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I click the \"Sign Up\" button",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185283000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "It should display an alert message \"Sign up successful\"",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3040600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signUp",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "sign-up-functionality",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Sign Up functionality",
+    "tags": [
+      {
+        "name": "@signUp",
+        "line": 1
+      }
+    ],
+    "uri": "tests\\features\\signup.feature"
+  }
+]
