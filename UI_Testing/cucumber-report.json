@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4717954915
+              "duration": 3198726749
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 257713208
+              "duration": 272841999
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1005885874
+              "duration": 1003363416
             }
           },
           {
@@ -58,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 346422000
+              "duration": 212596333
             }
           },
           {
@@ -71,7 +71,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6753541
+              "duration": 3629750
             }
           }
         ],
@@ -116,7 +116,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 258166
+              "duration": 377333
             }
           },
           {
@@ -129,7 +129,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 129667
+              "duration": 106291
             }
           },
           {
@@ -142,7 +142,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 88041
+              "duration": 146416
             }
           }
         ],
@@ -177,7 +177,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3041649290
+              "duration": 4083982999
             }
           },
           {
@@ -190,7 +190,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 285334375
+              "duration": 259019749
             }
           },
           {
@@ -202,8 +202,9 @@
               "location": "tests/steps/loginSteps.js:24"
             },
             "result": {
-              "status": "passed",
-              "duration": 2788969583
+              "status": "failed",
+              "duration": 1374748416,
+              "error_message": "page.waitForSelector: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('#nameofuser') to be visible\u001b[22m\n\u001b[2m    7 × locator resolved to hidden <a href=\"#\" id=\"nameofuser\" class=\"nav-link\"></a>\u001b[22m\n\n    at World.<anonymous> (/Users/jayanithyamadhushani/Documents/University/L4/ITQA/Final_Assignment_01/ITQA_Group-Assignment_42/UI_Testing/tests/steps/loginSteps.js:26:14)"
             }
           }
         ],
