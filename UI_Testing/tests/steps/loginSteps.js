@@ -32,3 +32,4 @@ Then('Clicking login button', async function () {
   console.log('Login successful!');
   await browser.close();
 });
+

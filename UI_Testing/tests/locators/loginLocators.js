@@ -7,3 +7,4 @@ module.exports = {
   loginSubmitButton: 'button[onclick="logIn()"]',
   userGreeting: '#nameofuser'
 };
+
