@@ -4,316 +4,122 @@
     "elements": [
       {
         "description": "",
-        "id": "checkout-page-validation;complete-a-purchase-with-valid-data",
+        "id": "sign-up-functionality;sign-up-user",
         "keyword": "Scenario",
         "line": 7,
-        "name": "Complete a purchase with valid data",
+        "name": "Sign Up user",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
+            "line": 5,
+            "name": "I am navigate to home page",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4527777700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
             "line": 8,
-            "name": "I am on the index page main page",
+            "name": "I click the \"Sign Up\" tab",
             "match": {
-              "location": "tests\\steps\\checkoutSteps.js:8"
+              "location": "tests\\steps\\signupSteps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 2511581500
+              "duration": 187080599
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Then ",
             "line": 9,
-            "name": "I click on a product",
+            "name": "It should display the Sign Up form",
             "match": {
-              "location": "tests\\steps\\checkoutSteps.js:12"
+              "location": "tests\\steps\\signupSteps.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 1298298799
+              "duration": 184167199
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 10,
-            "name": "I proceed to the product page",
+            "name": "I enter the username field with \"djuweiwiureh\"",
             "match": {
-              "location": "tests\\steps\\checkoutSteps.js:16"
+              "location": "tests\\steps\\signupSteps.js:34"
             },
             "result": {
               "status": "passed",
-              "duration": 371731499
+              "duration": 58043300
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I enter the password field with \"54876fhihfi\"",
+            "match": {
+              "location": "tests\\steps\\signupSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51253100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
             "line": 12,
-            "name": "I navigate to the cart page",
+            "name": "I click the \"Sign Up\" button",
             "match": {
-              "location": "tests\\steps\\checkoutSteps.js:24"
+              "location": "tests\\steps\\signupSteps.js:44"
             },
             "result": {
               "status": "passed",
-              "duration": 2519910400
+              "duration": 185283000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 13,
-            "name": "I proceed to checkout",
+            "name": "It should display an alert message \"Sign up successful\"",
             "match": {
-              "location": "tests\\steps\\checkoutSteps.js:28"
+              "location": "tests\\steps\\signupSteps.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 96650999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "I fill the form with valid data",
-            "match": {
-              "location": "tests\\steps\\checkoutSteps.js:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 593257999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "I should see a confirmation message",
-            "match": {
-              "location": "tests\\steps\\checkoutSteps.js:36"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 863729600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "I click ok",
-            "match": {
-              "location": "tests\\steps\\checkoutSteps.js:40"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 405235099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 17,
-            "name": "I should proceed to index page",
-            "match": {
-              "location": "tests\\steps\\checkoutSteps.js:44"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 630666799
+              "duration": 3040600
             }
           }
         ],
         "tags": [
           {
-            "name": "@checkout",
-            "line": 2
-          },
-          {
-            "name": "@checkout",
-            "line": 5
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "checkout-page-validation;submit-empty-checkout-form",
-        "keyword": "Scenario",
-        "line": 19,
-        "name": "Submit empty checkout form",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 20,
-            "name": "I am on the Cart page with items",
-            "match": {
-              "location": "tests\\steps\\checkoutSteps.js:55"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3008942999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 21,
-            "name": "I attempt to place an order by clicking place order button",
-            "match": {
-              "location": "tests\\steps\\checkoutSteps.js:59"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 94848500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "I enter null values to the given form",
-            "match": {
-              "location": "tests\\steps\\checkoutSteps.js:63"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 269073299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "I click purchese button",
-            "match": {
-              "location": "tests\\steps\\checkoutSteps.js:67"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 310439000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "it should give a empty error message",
-            "match": {
-              "location": "tests\\steps\\checkoutSteps.js:71"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 1598999,
-              "error_message": "page.textContent: selector: expected string, got undefined\n    at CheckoutPage.verifyErrorMessageForEmptyFields (D:\\University\\Academic\\Level 04\\ITQA\\Assignment group 42\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\pages\\checkoutPage.js:109:35)\n    at World.<anonymous> (D:\\University\\Academic\\Level 04\\ITQA\\Assignment group 42\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\checkoutSteps.js:72:22)"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@checkout",
-            "line": 2
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "checkout-page-validation;checking-whether-the-year-of-the-credit-card-is-valid",
-        "keyword": "Scenario",
-        "line": 26,
-        "name": "checking whether the year of the credit card is valid",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 27,
-            "name": "I am on the Cart page with items",
-            "match": {
-              "location": "tests\\steps\\checkoutSteps.js:55"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2165237399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 28,
-            "name": "I attempt to place an order by clicking place order button",
-            "match": {
-              "location": "tests\\steps\\checkoutSteps.js:59"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 77796500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 29,
-            "name": "I enter a future year to the year column",
-            "match": {
-              "location": "tests\\steps\\checkoutSteps.js:78"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 342890000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "I click the purchese button",
-            "match": {
-              "location": "tests\\steps\\checkoutSteps.js:82"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 170420800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 31,
-            "name": "it should give an error message",
-            "match": {
-              "location": "tests\\steps\\checkoutSteps.js:86"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 476300,
-              "error_message": "ReferenceError: locators is not defined\n    at CheckoutPage.verifyErrorMessageForInvalidYear (D:\\University\\Academic\\Level 04\\ITQA\\Assignment group 42\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\pages\\checkoutPage.js:102:54)\n    at World.<anonymous> (D:\\University\\Academic\\Level 04\\ITQA\\Assignment group 42\\ITQA_Group-Assignment_42\\UI_Testing\\tests\\steps\\checkoutSteps.js:87:24)"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@checkout",
-            "line": 2
+            "name": "@signUp",
+            "line": 1
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "checkout-page-validation",
-    "line": 3,
+    "id": "sign-up-functionality",
+    "line": 2,
     "keyword": "Feature",
-    "name": "Checkout Page Validation",
+    "name": "Sign Up functionality",
     "tags": [
       {
-        "name": "@checkout",
-        "line": 2
+        "name": "@signUp",
+        "line": 1
       }
     ],
-    "uri": "tests\\features\\checkout.feature"
+    "uri": "tests\\features\\signup.feature"
   }
 ]
