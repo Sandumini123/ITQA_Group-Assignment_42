@@ -7,7 +7,7 @@ setDefaultTimeout(20000);
 let browser, page;
 
 Given('I am navigate to home page', async function () {
-  browser = await chromium.launch({ headless: false }); // Set headless: true in production
+  browser = await chromium.launch({ headless: true }); // Set headless: true in production
   const context = await browser.newContext();
   page = await context.newPage();
   await page.goto('https://demoblaze.com/');

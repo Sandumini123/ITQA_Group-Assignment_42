@@ -12,7 +12,7 @@ setWorldConstructor(function() {
 
 Given('I am on the home page', { timeout: 20000 }, async function() {
   console.log('Launching browser...');
-  this.browser = await chromium.launch({ headless: false });
+  this.browser = await chromium.launch({ headless: true });
   console.log('Opening new page...');
   this.page = await this.browser.newPage();
   this.cartPage = new CartPage(this.page);

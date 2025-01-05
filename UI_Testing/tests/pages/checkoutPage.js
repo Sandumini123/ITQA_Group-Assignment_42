@@ -10,7 +10,7 @@ class CheckoutPage {
 
   async launchBrowser() {
     console.log('Launching browser...');
-    this.browser = await chromium.launch({ headless: false });
+    this.browser = await chromium.launch({ headless: true });
     const context = await this.browser.newContext();
     this.page = await context.newPage();
     console.log('Browser launched');
