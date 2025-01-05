@@ -7,7 +7,8 @@ let page;
 
 Given('Providing valid url', async function () {
   browser = await chromium.launch({ headless: true });
-  const context = await browser.newContext();
+  const context = await browser.newContext({viewport: { width: 1920, height: 1080 },
+    javaScriptEnabled: true,});
   page = await context.newPage();
   
   // Use explicit timeout for page navigation

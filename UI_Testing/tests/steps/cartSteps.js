@@ -14,7 +14,9 @@ Given('I am on the home page', { timeout: 20000 }, async function() {
   console.log('Launching browser...');
   this.browser = await chromium.launch({ headless: true });
   console.log('Opening new page...');
-  this.page = await this.browser.newPage();
+  context = await browser.newContext({viewport: { width: 1920, height: 1080 },
+    javaScriptEnabled: true,})
+  this.page = await context.newPage();
   this.cartPage = new CartPage(this.page);
   console.log('Navigating to home page...');
   await this.cartPage.openHomePage();
