@@ -13,7 +13,8 @@ Given('I navigate to the home page', async function () {
         headless: true, // Set to true in production for faster tests
         devtools: false,
     });
-    const context = await browser.newContext();
+    const context = await browser.newContext({viewport: { width: 1920, height: 1080 },
+        javaScriptEnabled: true,});
     page = await context.newPage();
     await page.goto('https://demoblaze.com/');
 

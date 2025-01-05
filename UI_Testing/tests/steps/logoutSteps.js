@@ -12,8 +12,10 @@ let logoutPage;
 
 Given('I am on the homepage', async function () {
   browser = await chromium.launch({ headless: true });
-  page = await browser.newPage();
-  
+  context = await browser.newContext({viewport: { width: 1920, height: 1080 },
+    javaScriptEnabled: true,})
+  page = await context.newPage();
+
   // Increase the timeout to 10 seconds (10000 milliseconds)
   await page.goto('https://demoblaze.com', { timeout: 30000 }); 
   

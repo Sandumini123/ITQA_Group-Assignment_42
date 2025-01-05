@@ -8,7 +8,8 @@ let browser, page;
 
 Given('I am navigate to home page', async function () {
   browser = await chromium.launch({ headless: true }); // Set headless: true in production
-  const context = await browser.newContext();
+  const context = await browser.newContext({viewport: { width: 1920, height: 1080 },
+    javaScriptEnabled: true,});
   page = await context.newPage();
   await page.goto('https://demoblaze.com/');
 });
